@@ -1,0 +1,20 @@
+code :
+
+num1 = int(input("Enter first Number : "))
+num2 = int(input("Enter second number : "))
+num3 = int(input("Enter third number : "))
+if(num1 < num2) and (num1 < num2):
+    print("Smallest number is : ", num1)
+
+elif(num2 < num1) and (num2 < num3):
+    print("Smallest number is : ", num2)
+    
+else:
+    print("Smallest number is ",num3)
+    
+    
+Output : 
+Enter first Number : 1
+Enter second number : 2
+Enter third number : 4
+Smallest number is :  1
