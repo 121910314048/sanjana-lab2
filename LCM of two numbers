@@ -1,0 +1,24 @@
+code :
+
+num1 = int(input("Enter first number : "))
+num2 = int(input("Enter second number : "))
+
+if(num1 > num2):
+    big = num1
+    
+elif(num2 > num1):
+    big = num2
+    
+while(True):
+    if((big%num1==0) and (big%num2==0)):
+        LCM = big
+        break
+    big += 1
+    
+print("The LCM is ",LCM)
+
+output :
+
+Enter first number : 4                                                                                                                        
+Enter second number : 8                                                                                                                       
+the LCM is 8
