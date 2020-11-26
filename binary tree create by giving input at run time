@@ -1,0 +1,68 @@
+
+class BinaryTree:
+    def __init__(self):
+        self.root = None
+
+    def insert(self, data):
+        cur = self.root
+        prev = None
+        while True:
+            prev = cur
+            if cur.data > data:
+                if cur.left:
+                    cur = cur.left
+                else:
+                    cur.left = Node(data)
+                    break
+            else:
+                if cur.right:
+                    cur = cur.right
+                else:
+                    cur.right = Node(data)
+                    break
+
+    def PrintTree(self, node):
+        if node.left: self.PrintTree(node.left)
+        print(node.data)
+        if node.right: self.PrintTree(node.right)
+
+
+b = BinaryTree()
+d = int(input("Enter the value of root data "))
+b.root = Node(d)
+while True:
+    k = input("Enter data you want to insert or quit for stopping insertion ")
+    if k != "quit":
+        b.insert(int(k))
+    else:
+        break
+b.PrintTree(b.root)
+output
+
+RESTART: C:/Users/laksh/AppData/Local/Programs/Python/Python38-32/sanjupython/user input binary tree.py
+Enter the value of root data 1
+Enter data you want to insert or quit for stopping insertion 2
+Enter data you want to insert or quit for stopping insertion 3
+Enter data you want to insert or quit for stopping insertion 4
+Enter data you want to insert or quit for stopping insertion 5
+Enter data you want to insert or quit for stopping insertion 6
+Enter data you want to insert or quit for stopping insertion 7
+Enter data you want to insert or quit for stopping insertion 8
+Enter data you want to insert or quit for stopping insertion 9
+Enter data you want to insert or quit for stopping insertion 10
+Enter data you want to insert or quit for stopping insertion 11
+Enter data you want to insert or quit for stopping insertion 12
+Enter data you want to insert or quit for stopping insertion quit
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+>>> 
